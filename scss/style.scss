@@ -12,3 +12,14 @@ body {
 	display: flex;
 	column-gap: 15px;
 }
+
+#ul {
+	user-select: none;
+	& li {
+		cursor: pointer;
+	}
+}
+
+.selected {
+	background: #0f0;
+}

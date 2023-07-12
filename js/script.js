@@ -19,3 +19,23 @@ gallery.addEventListener('click', (e) => {
 		e.preventDefault()
 	}
 })
+
+
+// 3
+
+const list = document.querySelector('#ul')
+
+list.addEventListener('click', (e) => {
+	if (e.target.closest('li')) {
+		const targetLi = e.target.closest('li')
+
+		if (e.ctrlKey)
+			targetLi.classList.toggle('selected')
+		else {
+			for (let liItem of list.children) {
+				liItem.classList.remove('selected')
+			}
+			targetLi.classList.add('selected')
+		}
+	}
+})
