@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	padding: 0;
+	padding: 20px;
+	height: 3000px;
 }
 
 #thumbs {
@@ -22,4 +23,47 @@ body {
 
 .selected {
 	background: #0f0;
+}
+
+li {
+	font-weight: initial;
+}
+
+
+#tree span {
+	cursor: pointer;
+	&:hover {
+		font-weight: 700;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid black;
+	padding: 4px;
+}
+th {
+	cursor: pointer;
+}
+th:hover {
+	background: yellow;
+}
+
+.tooltip {
+	/* деякі стилі для підказки, замість них ви можете використовувати власні */
+	position: fixed;
+	padding: 10px 20px;
+	border: 1px solid #b3c9ce;
+	border-radius: 4px;
+	text-align: center;
+	font: italic 14px/1.3 sans-serif;
+	color: #333;
+	background: #fff;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
