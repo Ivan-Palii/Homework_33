@@ -3,3 +3,12 @@ body {
 	padding: 0;
 }
 
+#thumbs {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	display: flex;
+	column-gap: 15px;
+}
